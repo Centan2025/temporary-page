@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: #fafafa;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #1a1a1a;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.content {
+    background: #f5f5f5;
+    padding: 100px 40px;
+    animation: fadeIn 0.6s ease-out;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #d0d0d0;
+    border-bottom: 2px solid #d0d0d0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.logo-wrapper {
+    margin: 0 auto 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.logo {
+    max-width: 400px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: none;
+    animation: slideIn 0.8s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.logo.show {
+    display: block;
+}
+
+.logo-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.3;
+    animation: slideIn 0.8s ease-out;
+}
+
+.logo-placeholder.hidden {
+    display: none;
+}
+
+.logo-placeholder svg rect {
+    fill: #e5e5e5;
+}
+
+.logo-placeholder svg path {
+    stroke: #d0d0d0;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #1a1a1a;
+    margin-bottom: 60px;
+    letter-spacing: -0.02em;
+}
+
+.subtitle {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 48px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+}
+
+.info {
+    margin-top: 0;
+}
+
+.contact-link {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+    transition: opacity 0.2s ease;
+    border-bottom: 1px solid #1a1a1a;
+    padding-bottom: 2px;
+}
+
+.contact-link:hover {
+    opacity: 0.6;
+    border-bottom-color: transparent;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
+    .content {
+        padding: 80px 30px;
+    }
+    
+    .title {
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+    
+    .subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .logo {
+        max-width: 280px;
+        max-height: 280px;
+    }
+    
+    .logo-wrapper {
+        margin-bottom: 60px;
+    }
+}
+
