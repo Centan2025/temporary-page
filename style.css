@@ -10,9 +10,10 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 20px;
     color: #1a1a1a;
+    overflow-y: auto;
 }
 
 .container {
@@ -23,14 +24,14 @@ body {
 
 .content {
     background: transparent;
-    padding: 100px 40px;
+    padding: 30px 40px;
     animation: fadeIn 0.6s ease-out;
     position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 @keyframes fadeIn {
@@ -43,7 +44,7 @@ body {
 }
 
 .logo-wrapper {
-    margin: 0 auto 20px;
+    margin: 0 auto 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,8 +54,8 @@ body {
 }
 
 .logo {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 250px;
+    max-height: 250px;
     width: auto;
     height: auto;
     object-fit: contain;
@@ -98,18 +99,18 @@ body {
 }
 
 .title {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: 400;
     color: #1a1a1a;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     letter-spacing: 0.12em;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 .image-wrapper {
-    margin: 0 auto 40px;
+    margin: 0 auto 20px;
     width: 100%;
-    max-width: 1600px;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,7 +118,8 @@ body {
 
 .sofa-image {
     width: 100%;
-    max-width: 1600px;
+    max-width: 100%;
+    max-height: 50vh;
     height: auto;
     object-fit: contain;
     display: block;
@@ -153,42 +155,61 @@ body {
 
 @media (max-width: 768px) {
     body {
-        padding: 15px;
+        padding: 10px;
     }
     
     .content {
-        padding: 80px 30px;
+        padding: 20px 15px;
     }
     
     .title {
-        font-size: 2rem;
-        margin-bottom: 50px;
+        font-size: 1.4rem;
+        margin-bottom: 15px;
     }
     
     .image-wrapper {
-        margin-bottom: 40px;
-        max-width: 100%;
+        margin-bottom: 15px;
     }
     
     .sofa-image {
-        max-width: 100%;
-    }
-    
-    .logo-wrapper {
-        margin-bottom: 30px;
-    }
-    
-    .subtitle {
-        font-size: 0.9rem;
+        max-height: 40vh;
     }
     
     .logo {
-        max-width: 280px;
-        max-height: 280px;
+        max-width: 180px;
+        max-height: 180px;
     }
     
     .logo-wrapper {
-        margin-bottom: 60px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-height: 800px) {
+    .content {
+        padding: 20px 40px;
+    }
+    
+    .logo {
+        max-width: 200px;
+        max-height: 200px;
+    }
+    
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .sofa-image {
+        max-height: 45vh;
+    }
+    
+    .logo-wrapper {
+        margin-bottom: 10px;
+    }
+    
+    .image-wrapper {
+        margin-bottom: 15px;
     }
 }
 
