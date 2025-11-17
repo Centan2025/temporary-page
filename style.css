@@ -54,8 +54,8 @@ body {
 }
 
 .logo {
-    max-width: 320px;
-    max-height: 320px;
+    max-width: 400px;
+    max-height: 400px;
     width: auto;
     height: auto;
     object-fit: contain;
@@ -176,8 +176,8 @@ body {
     }
     
     .logo {
-        max-width: 220px;
-        max-height: 220px;
+        max-width: 280px;
+        max-height: 280px;
     }
     
     .logo-wrapper {
@@ -191,8 +191,8 @@ body {
     }
     
     .logo {
-        max-width: 250px;
-        max-height: 250px;
+        max-width: 320px;
+        max-height: 320px;
     }
     
     .title {
